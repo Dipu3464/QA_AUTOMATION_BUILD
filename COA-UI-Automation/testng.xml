@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite
+name="COA Test Suite"
+parallel="tests" verbose="1" thread-count="1"
+configfailurepolicy="continue">
+
+<test name="COA UI Test" annotations="JDK"
+      preserve-order="true">
+    <classes>
+        <class name="com.coa.qa.runner.CucumberRunner" />
+    </classes>
+</test>
+</suite>
